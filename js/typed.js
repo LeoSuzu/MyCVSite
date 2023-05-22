@@ -93,7 +93,7 @@
         },
         backspace: function(t, s) {
             if (this.stop !== !0) {
-                var o = Math.round(70 * Math.random()) + this.backSpeed;
+                var o = Math.round(50 * Math.random()) + this.backSpeed;
                 var e = this;
                 e.timeout = setTimeout(function() {
                     if ("html" === e.contentType && ">" === t.substr(s).charAt(0)) {
@@ -157,10 +157,9 @@
     };
 
     t.fn.typed.defaults = {
-        strings: ["These are the default values...", "You know what you should do?", "Use your own!", "Have a great day!"],
-        typeSpeed: 0,
+        typeSpeed: 50,
         startDelay: 0,
-        backSpeed: 0,
+        backSpeed: 10,
         backDelay: 500,
         loop: !1,
         loopCount: !1,
@@ -179,9 +178,9 @@ function newTyped() {}
 $(function() {
     $("#typed").typed({
         // Change to edit type effect
-        strings: ["From Japan, live in Tampere Finland", "your galaxy", "everywhere"],
-        typeSpeed: 90,
-        backDelay: 700,
+        strings: ["From the land of ramen and cherry blossoms, now residing in the land of saunas and reindeer!", "Mastering the art of coding and green tea consumption at Tampere University of Applied Sciences.", "Been rockin' the service sector as an entrepreneur in Tampere, Finland for 15 years."],
+        //typeSpeed: 100,
+        //backDelay: 700,
         contentType: "html",
         loop: true,
         resetCallback: function() {
