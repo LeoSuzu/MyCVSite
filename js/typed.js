@@ -178,7 +178,7 @@ function newTyped() {}
 $(function() {
     $("#typed").typed({
         // Change to edit type effect
-        strings: ["From the land of ramen and cherry blossoms, now residing in the land of saunas and reindeer!", "Mastering the art of coding and green tea consumption at Tampere University of Applied Sciences.", "Been rockin' the service sector as an entrepreneur in Tampere, Finland for 15 years."],
+        strings: ["From the land of ramen and cherry blossoms, now residing in the land of saunas and reindeers!", "Mastering the art of coding and coffee consumption at Tampere University of Applied Sciences.", "Been rockin' the service sector as an entrepreneur in Tampere, Finland for 15 years."],
         //typeSpeed: 100,
         //backDelay: 700,
         contentType: "html",

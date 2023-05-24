@@ -14,6 +14,15 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 8px;
+                vertical-align: top;
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -26,11 +35,11 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">My projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">EXPERIENCE</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">EDUCATION</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">SKILLS</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">INTERESTS</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">PROJECTS</a></li>
                 </ul>
             </div>
         </nav>
@@ -46,60 +55,87 @@
                     <div>
                         <h3><br><span id="typed"></span></h3>
                     </div>
-                    <div class="subheading mb-5">
+                    <!-- Presentation -->
+                    <div class="subheading mb-3">
                         <a href="mailto:leona.suzuki@tuni.fi">leona.suzuki@tuni.fi</a>
-                    <!-- Esittelyosio -->
                     </div>
-                    <p class="lead mb-3">I am an IT engineering student at TAMK, graduated from TPA / Sasky's software developer training.
-                         I'm an Ex. entrepreneur for 15 years and accumulated versatile work experience.</p>
-                    <p class="lead mb-3">I am comfortable with people for whom it is important to finish the job properly.
-                        I am good at reading customers' needs and I know how to act customer-oriented while respecting the company's strategy.
-                        I'm not afraid of exceptions, because I've learned to prioritize things and figure out the overall picture during my time as an entrepreneur.</p>
-                    <!-- Yhteysosio -->
+                    <div style="margin-bottom: 30px" class="lead mb-1">
+                        <p>I am an IT engineering student at Tampere University of Applied Sciences and graduated from Sasky's software developer training.
+                            With 15 years of entrepreneurial experience in the service sector, I have acquired versatile skills.</p>
+                        <p>I prioritize thorough job completion and excel in understanding and meeting customer needs while aligning with company strategies.</p>
+                        <p>My entrepreneurial background has honed my ability to handle exceptions and prioritize tasks effectively, enabling me to see the bigger picture.</p>
+                    </div>
+                    <!-- Personal information, sosial media, CV, github -->
                     <div class="social-icons">
                         <a class="social-icon" href="mailto:leona.suzuki@tuni.fi"><i class="fa fa-send-o"></i></a>
-                        <a class="social-icon" href="https://github.com/LeoSuzu"><i class="fa fa-github"></i></a>
-                        <a class="social-icon" href="https://www.linkedin.com/in/leo-suzuki-60b25759/"><i class="fa fa-linkedin"></i></a>
-                        <a class="social-icon" href="https://www.facebook.com/leo.suzu"><i class="fa fa-facebook"></i></a>
-                        <a class="social-icon" ><i class="fa fa-file-pdf-o"></i></a>
+                        <a class="social-icon" href="https://github.com/LeoSuzu" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
+                        <a class="social-icon" href="https://www.linkedin.com/in/leo-suzuki-60b25759/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                        <a class="social-icon" href="assets/CV/cv_leo_suzuki.pdf" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-lines"></i></a>
+                        <a class="social-icon" href="assets/CV/cv_leo_suzuki.pdf" download><i class="fa fa-file-arrow-down"></i></a>
                     </div>
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Kokemuksetosio -->
+            <!-- EXPERIENCE -->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
+                    <h2 class="mb-6">EXPERIENCE</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Web-site and CRM</h3>
-                            <div class="subheading mb-3">Brunakärrs energi Oy</div>
-                            <p>Website creation and CRM. I was able to build a legal company established for the implementation of energy solutions.
-                            I had a free hand to implement the website and created a customer management system that is easy for the employer to
-                            remember to register customers periodically and manage customer relationships.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">3 / 2021 - 12 / 2021</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Game developing and testing</h3>
-                            <div class="subheading mb-3">Beiz Oy</div>
-                            <p>In the 1st internship, I tested the company's game libraries in Japanese, English and Finnish.</p>
-                            <p>In the 2nd internship I was able to make the company's "Lolas fruit sudoku" game
-                                 with my work partner using the Unity game engine and C# language.</p>
+                            <h3 class="mb-0">Beiz Oy</h3>
+                            <div class="subheading mb-3">Game developing and testing</div>
+                            <p>After testing the company's game libraries in Japanese, English, and Finnish,
+                                I collaborated with my work partner to develop the game 'Lola's Fruit Sudoku' using the Unity game engine and C# language.</p>
                             <a href="https://lolapanda.com/fi/oppimispelit/lolan-hedelmasudoku/">Lola's fruit sudoku</a>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">3 / 2021 - 12 / 2021</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">3/2021 - 12/2021</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Yrittäjä</h3>
-                            <div class="subheading mb-3">Oy Findaco Ltd</div>
-                            <p>Kannattavuuslaskelmia, CRM-toiminta, kotisivujen luonti ja ylläpito, 
-                                toimipisteiden ja esim. POS-pisteiden rakentaminen, päivittäminen ja ylläpito,
-                                markkinointia erilaisissa medioissa ja HR-toimintaa</p>
+                            <h3 class="mb-0">Brunakärrs energi Oy</h3>
+                            <div class="subheading mb-3">Website and CRM</div>
+                            <p>I built a legal company focused on energy solutions, handling website creation and CRM.
+                                I developed a user-friendly customer management system that enables easy customer registration and relationship management.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">5 / 2004 - 7 / 2019</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"> 10/2020 - 1/2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Oy Findaco Ltd</h3>
+                            <div class="subheading mb-3">I work as a CEO / entrepreneur and handle the following tasks:</div>
+                            <table>
+                                <tr>
+                                    <th>Task</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>CRM</td>
+                                    <td>Customer Relationship Management</td>
+                                </tr>
+                                <tr>
+                                    <td>Website</td>
+                                    <td>Creating and maintaining websites with Wix</td>
+                                </tr>
+                                <tr>
+                                    <td>Design and implementation of restaurant management system</td>
+                                    <td>Development of waiter and kitchen staff workstation</td>
+                                </tr>
+                                <tr>
+                                    <td>Programming and training for POS devices</td>
+                                    <td>Developing and training for wireless Point of Sale (POS) devices, including Lightspeed Canada</td>
+                                </tr>
+                                <tr>
+                                    <td>Marketing</td>
+                                    <td>Google, Facebook, Instagram, paper, etc.</td>
+                                </tr>
+                                <tr>
+                                    <td>HR management</td>
+                                    <td>Managing human resources</td>
+                                </tr>
+                            </table>
+
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">5/2004 - 7/2019</span></div>
                     </div>
                 </div>
             </section>
@@ -107,36 +143,45 @@
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
+                    <h2 class="mb-6">EDUCATION</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">TAMK- Univercity of applied schience</h3>
-                            <div class="subheading mb-3">Bachelor of Engineering ICT</div>
+                            <h3 class="mb-0">TAMK - University of Applied Sciences</h3>
+                            <div class="subheading mb-1">Bachelor of Engineering in ICT</div>
                             <div>Computer Science - Bachelor of Engineering</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">8 2022 - on going</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">8/2022 - on going</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">TPA / SASKY Municipal Education and Training Consortium </h3>
-                            <div class="subheading mb-3">Software developer</div>
-                            <div>Software developer - vocational qualification in Information and Communications Technology</div>
+                            <h3 class="mb-0">SASKY / TPA</h3>
+                            <div class="subheading mb-1">Software developer</div>
+                            <div>Vocational qualification in Information and Communications Technology</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">08/2020 - 12/2021</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Tampere Arts-Oriented Senior Secondary School</h3>
-                            <div class="subheading mb-3">baccalaureate</div>
+                            <h3 class="mb-0">Tampereen yhteiskoulu - High School</h3>
+                            <div class="subheading mb-1">High school graduate</div>
+                            <div>High school diploma and matriculation examination</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2001-2003</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">SA Parolannummi</h3>
+                            <div class="subheading mb-1">Sergeant</div>
+                            <div>Non-commissioned Officer Training and Leadership Training.</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Yokohama Asahi-ku Wakabadai North</h3>
-                            <div class="subheading mb-3">Japanese language</div>
+                            <div>Basic japanese language skills</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">1989 - 1995</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
                     </div>
                     
                 </div>
@@ -145,15 +190,14 @@
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">EDUCATION & EXPERIENCE</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <h2 class="mb-6">WORKING&nbsp;KNOWLEDGE&nbsp;OF</h2>
+                    <div class="h3">Working knowledge of</div>
+                    <div class="h3">Programming Languages & Tools</div>
                     <div>
                         <img src="assets/img/brand_python_icon_157826.png" class="logos" alt="python">
                         <img src="assets/img/cplusplus_logo_icon_247265.png" class="logos" alt="C++">
                         <img src="assets/img/2333390-html-html5-internet-website_85590.png" class="logos" alt="HTML">
                         <img src="assets/img/javascript_logo_icon_145155.png" class="logos" alt="Javascript">
-                    </div>
-                    <div style="margin-top: 10px">
                         <img src="assets/img/github-logo_icon-icons.com_73546.png" class="logos" alt="Github">
                         <img src="assets/img/unity_logo_icon_144772.png" class="logos" alt="Unity">
                         <img src="assets/img/adobe_photoshop_icon_132617.png" class="logos" alt="Photoshop">
@@ -168,84 +212,104 @@
                         < <li class="list-inline-item"><i class="fab fa-node"></i></li>
                     </ul>
                     -->
-                    <div class="subheading mb-3" style="margin-top: 20px">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Desig
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
+                    <table>
+                        <tr>
+                            <th>Technology</th>
+                            <th>Courses and Experience</th>
+                        </tr>
+                        <tr>
+                            <td>PYTHON</td>
+                            <td>2 courses and MTA 98-381</td>
+                        </tr>
+                        <tr>
+                            <td>C++</td>
+                            <td>2 courses and OOP course</td>
+                        </tr>
+                        <tr>
+                            <td>HTML, JS, CSS</td>
+                            <td>Basic web and responsive design, API fetch, charts, etc.</td>
+                        </tr>
+                        <tr>
+                            <td>CISCO NET. ACADEMY</td>
+                            <td>CCNA ITN 1</td>
+                        </tr>
+                        <tr>
+                            <td>Unity &amp; C#</td>
+                            <td>Game making with a team</td>
+                        </tr>
+                        <tr>
+                            <td>Photoshop &amp; InDesign</td>
+                            <td>Photo retouching and menu creation</td>
+                        </tr>
+                    </table>
                 </div>
             </section>
             <hr class="m-0" />
             <!-- Interests-->
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a software / web developer, I enjoy most of my time with travel abroad.</p>
-                    <p>When forced indoors, I follow a number of japanese movies and television shows. </p>
-                    <p class="mb-0">I spend a large amount of my free time exploring the latest technology advancements in the frontend and backend development world.</p>
-                    <p class="mb-0">I'm Ex. chef and restaurant owner so kitchen is one of the place where I spend lots of time and cooking is one of my passion.</p>
+                    <h2 class="mb-6">Interests</h2>
+                    <div class="h3">INTERESTS & HOBBIES</div>
+                    <div>
+                        As a perpetual student of software/web development, I embark on thrilling adventures abroad whenever I can (because debugging code isn't quite the same as exploring ancient ruins!).
+                        When confined indoors, I immerse myself in the captivating world of Japanese cinema and TV shows.
+                        But that's not all—I'm a master builder and fixer of RC cars and planes, providing endless fun for my little one.
+                        And let's not forget my commitment to being on the cutting edge of front-end and back-end development—I practically have a permanent seat in the technology realm.
+                        Oh, and did I mention I'm also a seasoned chef and restaurant owner? The kitchen is my sanctuary, where my culinary creations become works of art. ITADAKIMASU!
+                </div>
                 </div>
             </section>
             <hr class="m-0" />
             <!-- Project example with snapshot or gif -->
             <section class="resume-section" id="projects">
                 <div class="Project examples">
-                    <h2 class="mb-5">My projects</h2>
-                    <!-- Awards element-->
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
-                        </li>
-                    </ul>
+                    <h2 class="mb-6">PROJECTS</h2>
+                    <!-- PROJECT element-->
+                    <div class="container" style="width: 35vw">
+                        <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#projectCarousel" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#projectCarousel" data-bs-slide-to="2"></li>
+                                <!-- Add more indicators as needed -->
+                            </ol>
+                            <!-- Slides -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="path/to/project1.gif" class="d-block w-100" alt="Project 1">
+                                    <div class="carousel-caption">
+                                        <h5>Project 1</h5>
+                                        <p>Description of Project 1</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="path/to/project2.gif" class="d-block w-100" alt="Project 2">
+                                    <div class="carousel-caption">
+                                        <h5>Project 2</h5>
+                                        <p>Description of Project 2</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="path/to/project3.gif" class="d-block w-100" alt="Project 3">
+                                    <div class="carousel-caption">
+                                        <h5>Project 3</h5>
+                                        <p>Description of Project 3</p>
+                                    </div>
+                                </div>
+                                <!-- Add more slides as needed -->
+                            </div>
+                            <!-- Controls -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
