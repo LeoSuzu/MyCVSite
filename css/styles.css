@@ -5824,9 +5824,9 @@ textarea.form-control-lg {
 
 .carousel-inner {
   position: relative;
-  width: 100%;
   overflow: hidden;
 }
+
 .carousel-inner::after {
   display: block;
   clear: both;
@@ -5837,12 +5837,23 @@ textarea.form-control-lg {
   position: relative;
   display: none;
   float: left;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 700px;
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
+
+.carousel-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     transition: none;
@@ -5904,7 +5915,7 @@ textarea.form-control-lg {
   text-align: center;
   background: none;
   border: 0;
-  opacity: 0.5;
+  opacity: 1;
   transition: opacity 0.15s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -5919,7 +5930,7 @@ textarea.form-control-lg {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .carousel-control-prev {
@@ -5966,7 +5977,7 @@ textarea.form-control-lg {
   justify-content: center;
   padding: 0;
   margin-right: 15%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   margin-left: 15%;
   list-style: none;
 }
@@ -5999,13 +6010,13 @@ textarea.form-control-lg {
 
 .carousel-caption {
   position: absolute;
-  right: 15%;
-  bottom: 1.25rem;
-  left: 15%;
+  width: 100%;
+  bottom: 0;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   color: #fff;
   text-align: center;
+  background-color: rgba(0,0,0, 0.5);
 }
 
 .carousel-dark .carousel-control-prev-icon,
