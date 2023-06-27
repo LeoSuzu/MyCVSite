@@ -277,7 +277,7 @@ sup {
 
 a {
   color: var(--bs-link-color);
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: var(--bs-link-hover-color);
@@ -5984,8 +5984,8 @@ textarea.form-control-lg {
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;
-  width: 30px;
-  height: 3px;
+  width: 50px;
+  height: 5px;
   padding: 0;
   margin-right: 3px;
   margin-left: 3px;
@@ -6016,7 +6016,7 @@ textarea.form-control-lg {
   padding-bottom: 1.25rem;
   color: #fff;
   text-align: center;
-  background-color: rgba(0,0,0, 0.5);
+  background-color: rgba(0,0,0, 0.8);
 }
 
 .carousel-dark .carousel-control-prev-icon,
@@ -11029,3 +11029,18 @@ section.resume-section .resume-section-content {
   animation: blink 0.7s infinite;
 }
 
+@media screen and (max-width: 768px) {
+  .carousel-inner .carousel-item {
+    width: 100%;
+  }
+
+  .carousel-inner .carousel-caption {
+    bottom: 100px;
+  }
+
+  .carousel-inner .carousel-item video {
+    width: 100%;
+    height: auto;
+
+  }
+}

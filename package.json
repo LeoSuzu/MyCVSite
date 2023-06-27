@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "cors": "^2.8.5"
+  },
+  "name": "mycvsite",
+  "description": "This is my personal page made with bootstrap template under licence of MIT. I have made my own copy from this template and made own changes. Under this section you can find licence and persmissions for use this bootstarp template.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeoSuzu/MyCVSite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeoSuzu/MyCVSite/issues"
+  },
+  "homepage": "https://github.com/LeoSuzu/MyCVSite#readme"
+}
