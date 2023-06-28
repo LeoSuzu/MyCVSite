@@ -3,13 +3,15 @@
 * Start Bootstrap - Resume v7.0.6 (https://startbootstrap.com/theme/resume)
 * Copyright 2013-2023 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
+* Bootstrap  v5.2.3 (https://getbootstrap.com/)
+* Copyright 2011-2022 The Bootstrap Authors
+* Copyright 2011-2022 Twitter, Inc.
+* Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+
+I've made copy of this and change design preferences to file. Olso include own design preferences in end of this file.
+@LeoSuzu
+
 */
-/*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -146,7 +148,7 @@ h3, .h3 {
   margin-bottom: 0.5rem;
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 0.8;
   color: #000000;
 }
 
@@ -169,11 +171,11 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: calc(1.8rem + 0.9vw);
+  font-size: calc(0.7rem + 0.75vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -196,7 +198,7 @@ h6, .h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 abbr[title] {
@@ -518,7 +520,7 @@ progress {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -5839,7 +5841,7 @@ textarea.form-control-lg {
   float: left;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: auto;
   width: 700px;
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
@@ -5976,9 +5978,9 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center;
   padding: 0;
+  margin-left: 15%;
   margin-right: 15%;
   margin-bottom: 0.5rem;
-  margin-left: 15%;
   list-style: none;
 }
 .carousel-indicators [data-bs-target] {
@@ -11030,17 +11032,18 @@ section.resume-section .resume-section-content {
 }
 
 @media screen and (max-width: 768px) {
-  .carousel-inner .carousel-item {
+  .carousel-inner .carousel-item .carousel-indicators {
     width: 100%;
   }
 
-  .carousel-inner .carousel-caption {
-    bottom: 100px;
+ .carousel-caption .carousel-indicators {
+    bottom: 0;
   }
 
   .carousel-inner .carousel-item video {
     width: 100%;
     height: auto;
-
   }
+
+
 }
