@@ -11014,5 +11014,9 @@ section.resume-section .resume-section-content {
     height: auto;
   }
 
+}
 
+.click_to_download{
+  font-size: 10px;
+  margin-top: -5px;
 }
