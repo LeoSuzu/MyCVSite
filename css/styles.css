@@ -7684,7 +7684,7 @@ textarea.form-control-lg {
 }
 
 .mb-6 {
-  margin-bottom: -15rem !important;
+  margin-bottom: -10rem !important;
 }
 
 .mb-auto {
@@ -10988,6 +10988,7 @@ section.resume-section .resume-section-content {
 }
 .logos{
   width: 3.3rem;
+  opacity: 90%;
 }
 
 .typed-cursor{
