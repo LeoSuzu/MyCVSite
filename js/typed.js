@@ -48,30 +48,25 @@
                     let i = t.substr(s);
                     if ("^" === i.charAt(0)) {
                         let r = 1;
-                        if (/^\^\d+/.test(i)) {
-                            i = /\d+/.exec(i)[0];
-                            r += i.length;
-                            o = parseInt(i);
-                        }
+                        /^\^\d+/.test(i) && (i = /\d+/.exec(i)[0], r += i.length, o = parseInt(i));
                         t = t.substring(0, s) + t.substring(s + r);
                     }
                     if ("html" === e.contentType) {
                         let n = t.substr(s).charAt(0);
                         if ("<" === n || "&" === n) {
                             let a = "";
-                            const h = "<" === n ? ">" : ";";
-                            for (; t.substr(s).charAt(0) !== h;) {
+                            let h = "";
+                            for (h = "<" === n ? ">" : ";"; t.substr(s).charAt(0) !== h;) {
                                 a += t.substr(s).charAt(0);
                                 s++;
                             }
                             s++;
-                            //a += h;
+                            a += h;
                         }
                     }
                     e.timeout = setTimeout(function() {
                         if (s === t.length) {
-                            if (e.arrayPos === e.strings.length - 1) {
-                                e.options.onStringTyped(e.arrayPos);
+                            if (e.options.onStringTyped(e.arrayPos), e.arrayPos === e.strings.length - 1) {
                                 e.options.callback();
                                 e.curLoop++;
                                 if (e.loop === !1 || e.curLoop === e.loopCount) {
@@ -113,7 +108,7 @@
                             s--;
                         }
                         s--;
-                        // o += "<";
+                        o += "<";
                     }
                     var i = t.substr(0, s);
                     if (e.attr)
