@@ -160,7 +160,7 @@
         typeSpeed: 30,
         startDelay: 0,
         backSpeed: 10,
-        backDelay: 3000,
+        backDelay: 2000,
         loop: !1,
         loopCount: !1,
         showCursor: !0,
