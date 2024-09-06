@@ -1,8 +1,8 @@
 !function(t) {
     "use strict";
-    const s = function(s) {
+    const s = function(s, o) {
         this.el = t(s);
-        //this.options = t.extend({}, t.fn.typed.defaults, o);
+        this.options = t.extend({}, t.fn.typed.defaults, o);
         this.isInput = this.el.is("input");
         this.attr = this.options.attr;
         this.showCursor = this.isInput ? !1 : this.options.showCursor;
@@ -55,7 +55,7 @@
                         let n = t.substr(s).charAt(0);
                         if ("<" === n || "&" === n) {
                             let a = "";
-                            let h = "";
+                             h = "";
                             for (h = "<" === n ? ">" : ";"; t.substr(s).charAt(0) !== h;) {
                                 a += t.substr(s).charAt(0);
                                 s++;
@@ -66,13 +66,8 @@
                     }
                     e.timeout = setTimeout(function() {
                         if (s === t.length) {
-                            if (e.options.onStringTyped(e.arrayPos), e.arrayPos === e.strings.length - 1) {
-                                e.options.callback();
-                                e.curLoop++;
-                                if (e.loop === !1 || e.curLoop === e.loopCount) {
-                                    return;
-                                }
-                            }
+                            if (e.options.onStringTyped(e.arrayPos), e.arrayPos === e.strings.length - 1 && (e.options.callback(), e.curLoop++, e.loop === !1 || e.curLoop === e.loopCount))
+                                return;
                             e.timeout = setTimeout(function() {
                                 e.backspace(t, s);
                             }, e.backDelay);
@@ -162,10 +157,10 @@
     };
 
     t.fn.typed.defaults = {
-        typeSpeed: 30,
+        typeSpeed: 50,
         startDelay: 0,
         backSpeed: 10,
-        backDelay: 3000,
+        backDelay: 1500,
         loop: !1,
         loopCount: !1,
         showCursor: !0,
@@ -186,9 +181,9 @@ $(function() {
         strings: ["From the land of ramen and cherry blossoms, now residing in the land of saunas and reindeers!",
             "Mastering the art of coding and coffee consumption at Tampere University of Applied Sciences.",
             "Been rockin' the service sector as an entrepreneur in Tampere, Finland for 15 years.",
-            "Balancing code with cooking and travel, my tech journey involves everything from developing to exploring new places.",
-            "I'm a tech enthusiast, a foodie, a traveler, and a lifelong learner with a passion for all things digital.",
-            "I blend my passion for technology with strong coffee and a zest for life's adventures."],
+            "Balancing code with cooking and travel, my tech journey involves everything from developing software and games to hosting guests and exploring new places.",
+            "I'm a tech enthusiast, a foodie, a traveler, and a lifelong learner.",
+            "From crafting software and enjoying hand-ground coffee to hosting travelers and whipping up new recipes, I blend my passion for technology with a zest for life's adventures."],
         contentType: "html",
         loop: true,
         resetCallback: function() {
