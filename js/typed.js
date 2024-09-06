@@ -160,7 +160,7 @@
         typeSpeed: 50,
         startDelay: 0,
         backSpeed: 10,
-        backDelay: 500,
+        backDelay: 1500,
         loop: !1,
         loopCount: !1,
         showCursor: !0,
@@ -184,8 +184,6 @@ $(function() {
             "Balancing code with cooking and travel, my tech journey involves everything from developing software and games to hosting guests and exploring new places.",
             "I'm a tech enthusiast, a foodie, a traveler, and a lifelong learner.",
             "From crafting software and enjoying hand-ground coffee to hosting travelers and whipping up new recipes, I blend my passion for technology with a zest for life's adventures."],
-        typeSpeed: 100,
-        backDelay: 700,
         contentType: "html",
         loop: true,
         resetCallback: function() {
