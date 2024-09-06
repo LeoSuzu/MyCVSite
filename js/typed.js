@@ -55,7 +55,7 @@
                         let n = t.substr(s).charAt(0);
                         if ("<" === n || "&" === n) {
                             let a = "";
-                             h = "";
+                            let h = "";
                             for (h = "<" === n ? ">" : ";"; t.substr(s).charAt(0) !== h;) {
                                 a += t.substr(s).charAt(0);
                                 s++;
@@ -157,10 +157,10 @@
     };
 
     t.fn.typed.defaults = {
-        typeSpeed: 50,
+        typeSpeed: 30,
         startDelay: 0,
         backSpeed: 10,
-        backDelay: 1500,
+        backDelay: 3000,
         loop: !1,
         loopCount: !1,
         showCursor: !0,
@@ -181,9 +181,8 @@ $(function() {
         strings: ["From the land of ramen and cherry blossoms, now residing in the land of saunas and reindeers!",
             "Mastering the art of coding and coffee consumption at Tampere University of Applied Sciences.",
             "Been rockin' the service sector as an entrepreneur in Tampere, Finland for 15 years.",
-            "Balancing code with cooking and travel, my tech journey involves everything from developing software and games to hosting guests and exploring new places.",
-            "I'm a tech enthusiast, a foodie, a traveler, and a lifelong learner.",
-            "From crafting software and enjoying hand-ground coffee to hosting travelers and whipping up new recipes, I blend my passion for technology with a zest for life's adventures."],
+            "Balancing code with cooking and travel, my tech journey blends software and exploration.",
+            "Crafting software and enjoying hand-ground coffee, blending tech passion with life's adventures."],
         contentType: "html",
         loop: true,
         resetCallback: function() {
