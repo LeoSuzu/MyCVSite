@@ -1,6 +1,6 @@
 !function(t) {
     "use strict";
-    var s = function(s, o) {
+    const s = function(s, o) {
         this.el = t(s);
         this.options = t.extend({}, t.fn.typed.defaults, o);
         this.isInput = this.el.is("input");
@@ -27,7 +27,7 @@
     s.prototype = {
         constructor: s,
         init: function() {
-            var t = this;
+            let t = this;
             t.timeout = setTimeout(function() {
                 t.typewrite(t.strings[t.arrayPos], t.strPos);
             }, t.startDelay);
@@ -41,21 +41,21 @@
         },
         typewrite: function(t, s) {
             if (this.stop !== !0) {
-                var o = Math.round(70 * Math.random()) + this.typeSpeed;
-                var e = this;
+                const o = Math.round(70 * Math.random()) + this.typeSpeed;
+                const e = this;
                 e.timeout = setTimeout(function() {
-                    var o = 0;
-                    var i = t.substr(s);
+                    let o = 0;
+                    let i = t.substr(s);
                     if ("^" === i.charAt(0)) {
-                        var r = 1;
+                        let r = 1;
                         /^\^\d+/.test(i) && (i = /\d+/.exec(i)[0], r += i.length, o = parseInt(i));
                         t = t.substring(0, s) + t.substring(s + r);
                     }
                     if ("html" === e.contentType) {
-                        var n = t.substr(s).charAt(0);
+                        let n = t.substr(s).charAt(0);
                         if ("<" === n || "&" === n) {
-                            var a = "";
-                            var h = "";
+                            let a = "";
+                            let h = "";
                             for (h = "<" === n ? ">" : ";"; t.substr(s).charAt(0) !== h;) {
                                 a += t.substr(s).charAt(0);
                                 s++;
@@ -157,7 +157,7 @@
     };
 
     t.fn.typed.defaults = {
-        typeSpeed: 50,
+        typeSpeed: 100,
         startDelay: 0,
         backSpeed: 10,
         backDelay: 1500,
