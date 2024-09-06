@@ -162,10 +162,10 @@
     };
 
     t.fn.typed.defaults = {
-        typeSpeed: 100,
+        typeSpeed: 30,
         startDelay: 0,
         backSpeed: 10,
-        backDelay: 1500,
+        backDelay: 3000,
         loop: !1,
         loopCount: !1,
         showCursor: !0,
