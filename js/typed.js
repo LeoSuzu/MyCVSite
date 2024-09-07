@@ -1,12 +1,12 @@
 !function(t) {
     "use strict";
-    const s = function(s, o) {
+    const s = function(s) {
         this.el = t(s);
-        this.options = t.extend({}, t.fn.typed.defaults, o);
+        // this.options = t.extend({}, t.fn.typed.defaults, o);
         this.isInput = this.el.is("input");
         this.attr = this.options.attr;
         this.showCursor = this.isInput ? !1 : this.options.showCursor;
-        this.elContent = this.attr ? this.el.attr(this.attr) : this.el.text();
+        // this.elContent = this.attr ? this.el.attr(this.attr) : this.el.text();
         this.contentType = this.options.contentType;
         this.typeSpeed = this.options.typeSpeed;
         this.startDelay = this.options.startDelay;
@@ -46,28 +46,38 @@
                 e.timeout = setTimeout(function() {
                     let o = 0;
                     let i = t.substr(s);
-                    if ("^" === i.charAt(0)) {
-                        let r = 1;
-                        /^\^\d+/.test(i) && (i = /\d+/.exec(i)[0], r += i.length, o = parseInt(i));
-                        t = t.substring(0, s) + t.substring(s + r);
+                    if ("^" === i.charAt(0) && /^\^\d+/.test(i)) {
+                        let r;
+                        r = (i.match(/^\^\d+/)[0]).replace(/\^/, "");
+                        // i = i.substring(r.length);
+                        o = parseInt(r);
                     }
                     if ("html" === e.contentType) {
                         let n = t.substr(s).charAt(0);
                         if ("<" === n || "&" === n) {
                             let a = "";
-                            let h = "";
+                            let h;
                             for (h = "<" === n ? ">" : ";"; t.substr(s).charAt(0) !== h;) {
                                 a += t.substr(s).charAt(0);
                                 s++;
                             }
                             s++;
-                            a += h;
+                            // a += h;
                         }
                     }
                     e.timeout = setTimeout(function() {
                         if (s === t.length) {
-                            if (e.options.onStringTyped(e.arrayPos), e.arrayPos === e.strings.length - 1 && (e.options.callback(), e.curLoop++, e.loop === !1 || e.curLoop === e.loopCount))
-                                return;
+                            e.options.onStringTyped(e.arrayPos);
+
+                            if (e.arrayPos === e.strings.length - 1) {
+                                e.options.callback();
+                                e.curLoop++;
+
+                                if (e.loop === false || e.curLoop === e.loopCount) {
+                                    return;
+                                }
+                            }
+
                             e.timeout = setTimeout(function() {
                                 e.backspace(t, s);
                             }, e.backDelay);
@@ -93,8 +103,8 @@
         },
         backspace: function(t, s) {
             if (this.stop !== !0) {
-                var o = Math.round(50 * Math.random()) + this.backSpeed;
-                var e = this;
+                let o = Math.round(50 * Math.random()) + this.backSpeed;
+                let e = this;
                 e.timeout = setTimeout(function() {
                     if ("html" === e.contentType && ">" === t.substr(s).charAt(0)) {
                         var o = "";
@@ -103,7 +113,7 @@
                             s--;
                         }
                         s--;
-                        o += "<";
+                        // o += "<";
                     }
                     var i = t.substr(0, s);
                     if (e.attr)
@@ -181,8 +191,8 @@ $(function() {
         strings: ["From the land of ramen and cherry blossoms, now residing in the land of saunas and reindeers!",
             "Mastering the art of coding and coffee consumption at Tampere University of Applied Sciences.",
             "Been rockin' the service sector as an entrepreneur in Tampere, Finland for 15 years.",
-            "Balancing code with cooking and travel, my tech journey blends software and exploration.",
-            "Crafting software and enjoying hand-ground coffee, blending tech passion with life's adventures."],
+            "Balancing coding with a love for cooking and travel, my tech journey seamlessly combines software development and exploration.",
+            "From crafting software to savoring hand-ground coffee, I blend my passion for technology with life's adventures."],
         contentType: "html",
         loop: true,
         resetCallback: function() {
