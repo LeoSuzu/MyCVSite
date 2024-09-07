@@ -2,7 +2,7 @@
     "use strict";
     const s = function(s, o) {
         this.el = t(s);
-        // this.options = t.extend({}, t.fn.typed.defaults, o);
+        this.options = t.extend({}, t.fn.typed.defaults, o);
         this.isInput = this.el.is("input");
         this.attr = this.options.attr;
         this.showCursor = this.isInput ? !1 : this.options.showCursor;
