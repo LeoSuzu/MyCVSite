@@ -6,7 +6,7 @@
         this.isInput = this.el.is("input");
         this.attr = this.options.attr;
         this.showCursor = this.isInput ? !1 : this.options.showCursor;
-        this.elContent = this.attr ? this.el.attr(this.attr) : this.el.text();
+        // this.elContent = this.attr ? this.el.attr(this.attr) : this.el.text();
         this.contentType = this.options.contentType;
         this.typeSpeed = this.options.typeSpeed;
         this.startDelay = this.options.startDelay;
@@ -113,7 +113,7 @@
                             s--;
                         }
                         s--;
-                        o += "<";
+                        // o += "<";
                     }
                     let i = t.substr(0, s);
                     if (e.attr)
