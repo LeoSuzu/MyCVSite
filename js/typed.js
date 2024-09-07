@@ -4,9 +4,7 @@
     // Constructor function for Typed effect
     const TypedEffect = function(element, options) {
         this.element = $(element);  // Target HTML element
-        this.options = $.extend({},
-            $.fn.typed.defaults,
-            options);  // Merging default and user-defined options
+        this.options = $.extend({}, $.fn.typed.defaults, options);  // Merging default and user-defined options
         this.isInput = this.element.is("input");  // Check if the element is an input field
         this.attribute = this.options.attr;  // Attribute to change (if specified)
         this.showCursor = !this.isInput && this.options.showCursor;  // Only show cursor if it's not an input field
