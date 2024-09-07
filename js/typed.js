@@ -245,6 +245,7 @@ $(function() {
             "Mastering the art of coding and coffee consumption at Tampere University of Applied Sciences.",
             "Made in Japan, developed in Finland—fluent in both code and culture, from debugging to enjoying sushi and sauna sessions!",
             "Been rockin' the service sector as an entrepreneur in Tampere, Finland for 15 years.",
+            "A software developer with a passion for creating and innovating, from web development to mobile apps.",
             "Balancing coding with a love for cooking and travel, my tech journey seamlessly combines software development and exploration.",
         ],
         contentType: "html",
