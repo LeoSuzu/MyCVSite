@@ -243,9 +243,9 @@ $(function() {
         strings: [
             "From the land of ramen and cherry blossoms, now residing in the land of saunas and reindeers!",
             "Mastering the art of coding and coffee consumption at Tampere University of Applied Sciences.",
+            "Made in Japan, developed in Finland—fluent in both code and culture, from debugging to enjoying sushi and sauna sessions!",
             "Been rockin' the service sector as an entrepreneur in Tampere, Finland for 15 years.",
             "Balancing coding with a love for cooking and travel, my tech journey seamlessly combines software development and exploration.",
-            "From crafting software to savoring hand-ground coffee, I blend my passion for technology with life's adventures."
         ],
         contentType: "html",
         loop: true,
