@@ -1,12 +1,12 @@
 !function(t) {
     "use strict";
-    const s = function(s) {
+    const s = function(s, o) {
         this.el = t(s);
-        // this.options = t.extend({}, t.fn.typed.defaults, o);
+        this.options = t.extend({}, t.fn.typed.defaults, o);
         this.isInput = this.el.is("input");
         this.attr = this.options.attr;
         this.showCursor = this.isInput ? !1 : this.options.showCursor;
-        // this.elContent = this.attr ? this.el.attr(this.attr) : this.el.text();
+        this.elContent = this.attr ? this.el.attr(this.attr) : this.el.text();
         this.contentType = this.options.contentType;
         this.typeSpeed = this.options.typeSpeed;
         this.startDelay = this.options.startDelay;
@@ -49,7 +49,7 @@
                     if ("^" === i.charAt(0) && /^\^\d+/.test(i)) {
                         let r;
                         r = (i.match(/^\^\d+/)[0]).replace(/\^/, "");
-                        // i = i.substring(r.length);
+                        i = i.substring(r.length);
                         o = parseInt(r);
                     }
                     if ("html" === e.contentType) {
@@ -62,7 +62,7 @@
                                 s++;
                             }
                             s++;
-                            // a += h;
+                            a += h;
                         }
                     }
                     e.timeout = setTimeout(function() {
@@ -84,7 +84,7 @@
                         } else {
                             if (0 === s)
                                 e.options.preStringTyped(e.arrayPos);
-                            var o = t.substr(0, s + 1);
+                            let o = t.substr(0, s + 1);
                             if (e.attr)
                                 e.el.attr(e.attr,o);
                             else if (e.isInput)
@@ -107,15 +107,15 @@
                 let e = this;
                 e.timeout = setTimeout(function() {
                     if ("html" === e.contentType && ">" === t.substr(s).charAt(0)) {
-                        var o = "";
+                        let o = "";
                         for (; "<" !== t.substr(s).charAt(0);) {
                             o -= t.substr(s).charAt(0);
                             s--;
                         }
                         s--;
-                        // o += "<";
+                        o += "<";
                     }
-                    var i = t.substr(0, s);
+                    let i = t.substr(0, s);
                     if (e.attr)
                         e.el.attr(e.attr, i);
                     else if (e.isInput)
@@ -141,9 +141,9 @@
             }
         },
         reset: function() {
-            var t = this;
+            let t = this;
             clearInterval(t.timeout);
-            var s = this.el.attr("id");
+            let s = this.el.attr("id");
             this.el.after('<span id="' + s + '"/>');
             this.el.remove();
             if (typeof this.cursor !== "undefined")
@@ -154,9 +154,9 @@
 
     t.fn.typed = function(o) {
         return this.each(function() {
-            var e = t(this);
-            var i = e.data("typed");
-            var r = typeof o === "object" && o;
+            let e = t(this);
+            let i = e.data("typed");
+            let r = typeof o === "object" && o;
             if (!i) {
                 e.data("typed", i = new s(this, r));
             }
