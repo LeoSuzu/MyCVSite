@@ -5212,7 +5212,6 @@ textarea.form-control-lg {
   --bs-toast-zindex: 1090;
   position: absolute;
   z-index: var(--bs-toast-zindex);
-  width: -moz-max-content;
   width: max-content;
   max-width: 100%;
   pointer-events: none;
@@ -10986,9 +10985,23 @@ section.education-section .education-section-content {
     padding-bottom: 5rem;
   }
 }
-.logos{
-  width: 3.3rem;
+.logos {
+  width: 8vw; /* Default size for larger screens */
+  max-width: 50px; /* Limit max size on big screens */
+  margin: 10px 10px 10px 0; /* Space between icons order top, right, bottom, left */
+
+@media (max-width: 768px) {
+  .logos {
+    width: 5rem; /* Larger size for mobile devices */
+  }
 }
+
+@media (max-width: 480px) {
+  .logos {
+    width: 4rem; /* Adjust for smaller mobile screens */
+  }
+}
+
 
 .typed-cursor{
   opacity: 1;
@@ -11019,4 +11032,5 @@ section.education-section .education-section-content {
 .click_to_download{
   font-size: 10px;
   margin-top: -5px;
-}
+}}
+

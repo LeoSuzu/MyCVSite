@@ -241,7 +241,6 @@ $(function() {
     // Initialize typed effect on the element with ID 'typed'
     $("#typed").typed({
         strings: [
-            "A software developer with a passion for creating and innovating, from web development to mobile apps.",
             "From the land of ramen and cherry blossoms, now residing in the land of saunas and reindeers!",
             "Mastering the art of coding and coffee consumption at Tampere University of Applied Sciences.",
             "Made in Japan, developed in Finland—fluent in both code and culture, from debugging to enjoying sushi and sauna sessions!",
