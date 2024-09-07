@@ -49,7 +49,7 @@
                     if ("^" === i.charAt(0) && /^\^\d+/.test(i)) {
                         let r;
                         r = (i.match(/^\^\d+/)[0]).replace(/\^/, "");
-                        i = i.substring(r.length);
+                        // i = i.substring(r.length);
                         o = parseInt(r);
                     }
                     if ("html" === e.contentType) {
@@ -62,7 +62,7 @@
                                 s++;
                             }
                             s++;
-                            a += h;
+                            // a += h;
                         }
                     }
                     e.timeout = setTimeout(function() {
