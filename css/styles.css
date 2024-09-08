@@ -134,14 +134,13 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  margin-top: -50px;
-  margin-left: -70px;
-  margin-bottom: 0;
+  margin-top: -30px;
+  margin-left: -100px;
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1;
   color: #000000;
-  opacity: 8%;
+  opacity: 0.07; /* Fixed opacity value to be between 0 and 1 */
 }
 
 h3, .h3 {
@@ -163,11 +162,11 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: calc(15rem + 2.7vw);
+  font-size: calc(20rem + 2.7vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: calc(18rem + 2.7vw);
+    font-size: calc(25em + 2.7vw);
   }
 }
 
@@ -658,6 +657,8 @@ progress {
   font-size: 0.875em;
   color: #6c757d;
 }
+
+
 
 .container,
 .container-fluid,
@@ -5827,10 +5828,9 @@ textarea.form-control-lg {
 
 .carousel-video {
   max-width: 100%;
-  height: 500px;
+  height: auto;
   object-fit: cover;
 }
-
 
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
@@ -5987,14 +5987,15 @@ textarea.form-control-lg {
 }
 
 .carousel-caption {
-  position: absolute;
-  width: 100%;
+  width: 100%; /* Adjust width to fit the container */
   bottom: 0;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  left: 0; /* Align the caption to the left */
+  right: 0; /* Ensure it stretches across the container */
+  padding: 10px; /* Add some padding for spacing */
   color: #fff;
-  text-align: center;
-  background-color: rgba(0,0,0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center; /* Center the text inside the caption */
+  box-sizing: border-box; /* Ensure padding doesn't overflow */
 }
 
 .carousel-dark .carousel-control-prev-icon,
@@ -7683,7 +7684,7 @@ textarea.form-control-lg {
 }
 
 .mb-6 {
-  margin-bottom: -10rem !important;
+  margin-bottom: -13rem !important;
 }
 
 .mb-auto {
@@ -10946,7 +10947,7 @@ p.lead {
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 .social-icons .social-icon:last-child {
   margin-right: 0;
@@ -10962,14 +10963,14 @@ p.lead {
 section.cv-section {
   display: flex;
   align-items: center;
-  padding-left: 1rem;
+  padding-left: 3rem;
   padding-right: 1rem;
-  padding-top: 5rem;
+  padding-top: 2rem;
   padding-bottom: 5rem;
   max-width: 75rem;
 }
 section.cv-section .cv-section-content {
-  width: 100%;
+  width: 90%;
 }
 
 @media (min-width: 768px) {
@@ -10983,10 +10984,11 @@ section.cv-section .cv-section-content {
   }
 }
 .logos {
+  padding: 0 0 0 0.5vw;
   width: 8vw; /* Default size for larger screens */
   max-width: 50px; /* Limit max size on big screens */
   min-width: 10px; /* Limit min size on small screens */
-  margin: 0px 5px 5px 0; /* Space between icons order top, right, bottom, left */
+  margin: 0 0 0.3rem 0.5rem; /* Space between icons order top, right, bottom, left */
 
 @media (max-width: 768px) {
   .logos {
