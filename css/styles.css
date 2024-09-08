@@ -5988,7 +5988,7 @@ textarea.form-control-lg {
 
 .carousel-caption {
   width: 100%; /* Adjust width to fit the container */
-  bottom: 0;
+  bottom: 0; /* Position the caption at the bottom of the carousel */
   left: 0; /* Align the caption to the left */
   right: 0; /* Ensure it stretches across the container */
   padding: 10px; /* Add some padding for spacing */
