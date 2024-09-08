@@ -10959,7 +10959,7 @@ p.lead {
   font-size: 3rem;
 }
 
-section.education-section {
+section.cv-section {
   display: flex;
   align-items: center;
   padding-left: 1rem;
@@ -10968,27 +10968,25 @@ section.education-section {
   padding-bottom: 5rem;
   max-width: 75rem;
 }
-section.education-section .education-section-content {
+section.cv-section .cv-section-content {
   width: 100%;
 }
 
 @media (min-width: 768px) {
-  section.education-section {
+  section.cv-section {
     min-height: 100vh;
   }
 }
 @media (min-width: 992px) {
-  section.education-section {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+  section.cv-section {
+    padding: 5rem 3rem;
   }
 }
 .logos {
   width: 8vw; /* Default size for larger screens */
   max-width: 50px; /* Limit max size on big screens */
-  margin: 10px 10px 10px 0; /* Space between icons order top, right, bottom, left */
+  min-width: 10px; /* Limit min size on small screens */
+  margin: 0px 5px 5px 0; /* Space between icons order top, right, bottom, left */
 
 @media (max-width: 768px) {
   .logos {
