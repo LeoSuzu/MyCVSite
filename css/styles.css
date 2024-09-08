@@ -10937,6 +10937,7 @@ p.lead {
     display: block;
   }
 }
+
 .social-icons .social-icon {
   display: inline-flex;
   align-items: center;
@@ -10949,15 +10950,32 @@ p.lead {
   font-size: 1.5rem;
   margin-right: 0.5rem;
 }
+
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
+
 .social-icons .social-icon:hover {
   background-color: #929292;
 }
 
-.dev-icons {
-  font-size: 3rem;
+/* Media Query for smaller devices */
+@media (max-width: 768px) {
+  .social-icons .social-icon {
+    height: 2.5rem; /* Reduce height */
+    width: 2.5rem;  /* Reduce width */
+    font-size: 1.2rem; /* Reduce font size */
+    margin-right: 0.3rem; /* Reduce the gap */
+  }
+}
+
+@media (max-width: 480px) {
+  .social-icons .social-icon {
+    height: 2rem; /* Further reduce height */
+    width: 2rem;  /* Further reduce width */
+    font-size: 1rem; /* Further reduce font size */
+    margin-right: 0.2rem; /* Further reduce the gap */
+  }
 }
 
 section.cv-section {
