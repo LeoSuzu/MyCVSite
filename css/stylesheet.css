@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Resume v7.0.6 (https://startbootstrap.com/theme/resume)
-* Copyright 2013-2023 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
 * Bootstrap  v5.2.3 (https://getbootstrap.com/)
 * Copyright 2011-2022 The Bootstrap Authors
@@ -10962,19 +10961,19 @@ p.lead {
 /* Media Query for smaller devices */
 @media (max-width: 768px) {
   .social-icons .social-icon {
-    height: 2.5rem; /* Reduce height */
-    width: 2.5rem;  /* Reduce width */
-    font-size: 1.2rem; /* Reduce font size */
-    margin-right: 0.3rem; /* Reduce the gap */
+    height: 3rem; /* Reduce height */
+    width: 3rem;  /* Reduce width */
+    font-size: 1.5rem; /* Reduce font size */
+    margin-right: 0.5rem; /* Reduce the gap */
   }
 }
 
 @media (max-width: 480px) {
   .social-icons .social-icon {
-    height: 2rem; /* Further reduce height */
-    width: 2rem;  /* Further reduce width */
-    font-size: 1rem; /* Further reduce font size */
-    margin-right: 0.2rem; /* Further reduce the gap */
+    height: 2.5rem; /* Further reduce height */
+    width: 2.5rem;  /* Further reduce width */
+    font-size: 1.2rem; /* Further reduce font size */
+    margin-right: 0.3rem; /* Further reduce the gap */
   }
 }
 
