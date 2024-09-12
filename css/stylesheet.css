@@ -5825,7 +5825,7 @@ textarea.form-control-lg {
   object-fit: cover;
 }
 
-.carousel-video {
+.carousel-element {
   max-width: 100%;
   height: auto;
   object-fit: cover;

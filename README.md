@@ -1,12 +1,12 @@
+# Personal website (cv)
+### @LeoSuzu
+
 This is my personal page made with bootstrap template under licence of MIT.
 I have made my own copy from this template and made own changes.
 Under this section you can find licence and persmissions for use this bootstarp template.
 
-@LeoSuzu
-
 The MIT License (MIT)
-
-Copyright (c) 2013-2022 Start Bootstrap LLC
+Copyright (c) 2013 Start Bootstrap LLC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -27,8 +27,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 * Bootstrap v5.1.3 (https://getbootstrap.com/)
-* Copyright 2011-2021 The Bootstrap Authors
-* Copyright 2011-2021 Twitter, Inc.
+* Copyright 2011 The Bootstrap Authors
 * Start Bootstrap - Resume v7.0.5 (https://startbootstrap.com/theme/resume)
 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)

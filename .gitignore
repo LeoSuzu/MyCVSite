@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+
+# WebStorm and IntelliJ IDEA
+.idea/
+*.iml
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Environment variables
+.env
+
+# Build output
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.swp
+
+# Generated files by npm/yarn
+package-lock.json
+yarn.lock
