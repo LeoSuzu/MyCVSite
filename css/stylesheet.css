@@ -188,7 +188,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 h6, .h6 {
@@ -5788,15 +5788,32 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
+  width: 80%; /* Make the carousel smaller */
+  margin: 0 auto; /* Center the carousel */
 }
 
-.carousel.pointer-event {
-  touch-action: pan-y;
+.carousel-caption {
+  width: 100%; /* Adjust width to fit the container */
+  bottom: 0; /* Position the caption at the bottom of the carousel */
+  left: 0; /* Align the caption to the left */
+  right: 0; /* Ensure it stretches across the container */
+  padding: 20px; /* Add some padding for spacing */
+  color: #d3d3d3;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center; /* Center the text inside the caption */
+  box-sizing: border-box; /* Ensure padding doesn't overflow */
+}
+
+.carousel-project-name {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
 }
 
 .carousel-inner {
   position: relative;
   overflow: hidden;
+  width: 100%; /* Ensure the inner container takes full width */
 }
 
 .carousel-inner::after {
@@ -5812,8 +5829,7 @@ textarea.form-control-lg {
   justify-content: center;
   align-items: center;
   height: auto;
-  width: 100%;
-  margin-right: -100%;
+  width: 100%; /* Ensure the item takes full width */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
@@ -5821,7 +5837,6 @@ textarea.form-control-lg {
 
 .carousel-image {
   max-width: 100%;
-  max-height: 100%;
   object-fit: cover;
 }
 
@@ -5886,29 +5901,32 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
+  width: 10%; /* Use percentage for width */
   padding: 0;
   color: #fff;
   text-align: center;
   background: none;
   border: 0;
   opacity: 1;
-  transition: opacity 0.15s ease;
+  transition: opacity 0.10s ease;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .carousel-control-prev,
   .carousel-control-next {
     transition: none;
   }
 }
+
 .carousel-control-prev:hover, .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
-  color: #fff;
+  color: red; /* Change hover color to red */
   text-decoration: none;
   outline: 0;
   opacity: 1;
 }
+
 
 .carousel-control-prev {
   left: 0;
@@ -5928,20 +5946,22 @@ textarea.form-control-lg {
   background-size: 100% 100%;
 }
 
-/* rtl:options: {
-  "autoRename": true,
-  "stringMap":[ {
-    "name"    : "prev-next",
-    "search"  : "prev",
-    "replace" : "next"
-  } ]
-} */
 .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath stroke='darkgray' stroke-width='2' d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-prev-icon:focus {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='red'%3e%3cpath stroke='red' stroke-width='2' d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
 }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath stroke='darkgray' stroke-width='2' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon:hover,
+.carousel-control-next-icon:focus {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='red'%3e%3cpath stroke='red' stroke-width='2' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .carousel-indicators {
@@ -5953,20 +5973,17 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center;
   padding: 0;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-bottom: 0.5rem;
+  margin: 0 15%; /* Use percentage for margins */
   list-style: none;
 }
+
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;
-  width: 50px;
-  height: 5px;
-  padding: 0;
-  margin-right: 3px;
-  margin-left: 3px;
-  text-indent: -999px;
+  width: 8%; /* Make indicators smaller */
+  height: 1.2vh; /* Adjust height */
+  border-radius: 90%; /* Make indicators rounded */
+  margin: 0 0.5%; /* Add space between indicators */
   cursor: pointer;
   background-color: #fff;
   background-clip: padding-box;
@@ -5976,6 +5993,7 @@ textarea.form-control-lg {
   opacity: 0.5;
   transition: opacity 0.6s ease;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .carousel-indicators [data-bs-target] {
     transition: none;
@@ -5983,18 +6001,6 @@ textarea.form-control-lg {
 }
 .carousel-indicators .active {
   opacity: 1;
-}
-
-.carousel-caption {
-  width: 100%; /* Adjust width to fit the container */
-  bottom: 0; /* Position the caption at the bottom of the carousel */
-  left: 0; /* Align the caption to the left */
-  right: 0; /* Ensure it stretches across the container */
-  padding: 10px; /* Add some padding for spacing */
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.8);
-  text-align: center; /* Center the text inside the caption */
-  box-sizing: border-box; /* Ensure padding doesn't overflow */
 }
 
 .carousel-dark .carousel-control-prev-icon,
@@ -6016,6 +6022,22 @@ textarea.form-control-lg {
   vertical-align: var(--bs-spinner-vertical-align);
   border-radius: 50%;
   animation: var(--bs-spinner-animation-speed) linear infinite var(--bs-spinner-animation-name);
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-inner .carousel-item{
+    width: 100%;
+  }
+
+  .carousel-caption .carousel-indicators {
+    bottom: 0;
+  }
+
+  .carousel-inner .carousel-item video {
+    width: 100%;
+    height: auto;
+  }
+
 }
 
 @keyframes spinner-border {
@@ -11028,22 +11050,6 @@ section.cv-section .cv-section-content {
   -ms-animation: blink 0.7s infinite;
   -o-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
-}
-
-@media screen and (max-width: 768px) {
-  .carousel-inner .carousel-item{
-    width: 100%;
-  }
-
- .carousel-caption .carousel-indicators {
-    bottom: 0;
-  }
-
-  .carousel-inner .carousel-item video {
-    width: 100%;
-    height: auto;
-  }
-
 }
 
 .click_to_download{
