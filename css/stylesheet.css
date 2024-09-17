@@ -5788,8 +5788,7 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
-  width: 80%; /* Make the carousel smaller */
-  margin: 0 auto; /* Center the carousel */
+  width: 90%; /* Ensure the carousel takes full width */
 }
 
 .carousel-caption {
