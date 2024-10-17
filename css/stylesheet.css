@@ -3144,7 +3144,7 @@ textarea.form-control-lg {
 }
 
 .btn-link {
-  --bs-btn-font-weight: 400;
+  --bs-btn-font-weight: 200;
   --bs-btn-color: var(--bs-link-color);
   --bs-btn-bg: transparent;
   --bs-btn-border-color: transparent;
