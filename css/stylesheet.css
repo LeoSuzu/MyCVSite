@@ -3144,7 +3144,7 @@ textarea.form-control-lg {
 }
 
 .btn-link {
-  --bs-btn-font-weight: 200;
+  --bs-btn-font-weight: 400;
   --bs-btn-color: var(--bs-link-color);
   --bs-btn-bg: transparent;
   --bs-btn-border-color: transparent;
@@ -11056,3 +11056,9 @@ section.cv-section .cv-section-content {
   margin-top: -5px;
 }}
 
+.btn-outline-light {
+  border-radius: 15px;
+  padding: 1px 30px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
