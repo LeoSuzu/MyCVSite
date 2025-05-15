@@ -18,7 +18,7 @@
         // Character position within the current string
         this.char = 0;
 
-        // Initialize typing effect
+        // Initialize typing effec
         this.init();
     };
 
