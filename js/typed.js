@@ -84,7 +84,7 @@ $(function() {
         strings: [
             "From the land of ramen and cherry blossoms, now residing in the land of saunas and reindeer!",
             "Mastering the art of coding and coffee consumption at Tampere University of Applied Sciences.",
-            "Rocking the service sector as an entrepreneur in Finland for 15 years.",
+            "Rocking the service sector as an entrepreneur in Tampere Finland for 15 years.",
             "Balancing coding with a love for cooking and travel—blending software development with global exploration."
         ]
     });
