@@ -241,11 +241,10 @@ $(function() {
     // Initialize typed effect on the element with ID 'typed'
     $("#typed").typed({
         strings: [
-            "From the land of ramen and cherry blossoms, now residing in the land of saunas and reindeers!",
+            "From the land of ramen and cherry blossoms, now residing in the land of saunas and reindeer!",
             "Mastering the art of coding and coffee consumption at Tampere University of Applied Sciences.",
-            "Made in Japan, developed in Finland—fluent in both code and culture, from debugging to enjoying sushi and sauna sessions!",
-            "Been rockin' the service sector as an entrepreneur in Tampere, Finland for 15 years.",
-            "Balancing coding with a love for cooking and travel, my tech journey seamlessly combines software development and exploration.",
+            "Rocking the service sector as an entrepreneur in Finland for 15 years.",
+            "Balancing coding with a love for cooking and travel—blending software development with global exploration.",
         ],
         contentType: "html",
         loop: true,
