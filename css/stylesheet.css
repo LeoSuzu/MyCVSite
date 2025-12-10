@@ -5845,6 +5845,17 @@ textarea.form-control-lg {
   object-fit: cover;
 }
 
+/* Project carousel: make the video smaller and centered */
+#projectCarousel .carousel-item video.carousel-element {
+    display: block;       /* allow margin centering */
+    max-width: 70%;       /* make it narrower than full width */
+    max-height: 60vh;     /* limit height: 60% of viewport */
+    width: auto;          /* keep aspect ratio */
+    height: auto;
+    margin: 0 auto;       /* center horizontally */
+    object-fit: contain;  /* show whole video, no cropping */
+}
+
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     transition: none;
