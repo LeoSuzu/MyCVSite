@@ -318,128 +318,196 @@
             <section class="cv-section" id="projects">
                 <div class="project-examples">
                     <h2 class="mb-6">PROJECTS</h2>
-                    <div class="h1">PROJECT EXAMPLES</div>
+                    <h1 class="h1">PROJECT EXAMPLES</h1>
 
                     <!-- Carousel wrapper -->
-                    <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="30000" data-bs-pause="hover">
+                    <div id="projectCarousel"
+                         class="carousel slide"
+                         data-bs-ride="carousel"
+                         data-bs-interval="30000"
+                         data-bs-pause="hover">
+
+                        <!-- Indicators -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="5"
+                                    aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="6"
+                                    aria-label="Slide 7"></button>
+                        </div>
+
                         <div class="carousel-inner">
 
                             <!-- First Slide -->
-
                             <div class="carousel-item active">
-                                <video class="carousel-element" autoplay loop muted>
+                                <video class="carousel-element" autoplay loop muted playsinline>
                                     <source src="project_samples/MovesenseFW/PR_Video.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                                 <div class="carousel-caption">
                                     <h5 class="carousel-project-name">
-                                        Movesense Player Logger and Tracker (C++, Android - Java/Kotlin)
+                                        Movesense Player Logger and Tracker (C++, Android – Java/Kotlin)
                                     </h5>
-                                    <p class="project-description">Weather&Pic app showing current weather and local picture</p>
+                                    <p class="project-description">
+                                        Firmware and Android tools for logging and tracking player heart rate and movement using a Movesense belt.
+                                    </p>
                                 </div>
                             </div>
 
                             <!-- Second Slide -->
-
-                            <div class="carousel-item active">
-                                <img class="carousel-element" src="project_samples/WePicApp/Tampere.png" alt="Tampere">
+                            <div class="carousel-item">
+                                <img class="carousel-element"
+                                     src="project_samples/WePicApp/Tampere.png"
+                                     alt="Screenshot of Weather & Pic web app showing Tampere">
                                 <div class="carousel-caption">
                                     <h5 class="carousel-project-name">
-                                        Weather App (HTML, JS, CSS)
+                                        Weather &amp; Pic App (HTML, JS, CSS)
                                     </h5>
-                                    <p class="project-description">Weather&Pic app showing current weather and local picture</p>
-                                    <a href="https://wepic.vercel.app" class="btn btn-outline-light" target="_blank">Try it!</a>
+                                    <p class="project-description">
+                                        Web app showing current weather and a local Unsplash picture based on location.
+                                    </p>
+                                    <a href="https://wepic.vercel.app"
+                                       class="btn btn-outline-light"
+                                       target="_blank"
+                                       rel="noopener noreferrer">
+                                        Try it!
+                                    </a>
                                 </div>
                             </div>
 
                             <!-- Third Slide -->
-
                             <div class="carousel-item">
-                                <img class="carousel-element" src="project_samples/DXF_file_calc/collab__file.png" alt="DXF Calculator">
+                                <img class="carousel-element"
+                                     src="project_samples/DXF_file_calc/collab__file.png"
+                                     alt="DXF length calculator screenshot">
                                 <div class="carousel-caption">
                                     <h5 class="carousel-project-name">
                                         DXF Reader and Calculator (Python)
                                     </h5>
-                                    <p class="project-description">Reading DXF file and return total or/and detailed length</p>
-                                    <a href="https://finntepa.fi" class="btn btn-outline-light" target="_blank">Ask about</a>
+                                    <p class="project-description">
+                                        Reads DXF files and calculates total and detailed line lengths for laser cutting workflows.
+                                    </p>
+                                    <a href="https://finntepa.fi"
+                                       class="btn btn-outline-light"
+                                       target="_blank"
+                                       rel="noopener noreferrer">
+                                        Ask about
+                                    </a>
                                 </div>
                             </div>
 
-                            <!-- Forth Slide -->
-
+                            <!-- Fourth Slide -->
                             <div class="carousel-item">
-                                <img class="carousel-element" src="./project_samples/Art_Maker_3_python/Circle%20art%202.jpg" alt="Circle art">
+                                <img class="carousel-element"
+                                     src="project_samples/Art_Maker_3_python/Circle%20art%202.jpg"
+                                     alt="Generated circle art made with Python">
                                 <div class="carousel-caption">
                                     <h5 class="carousel-project-name">
                                         Art Maker 3 (Python)
                                     </h5>
-                                    <p class="project-description">Art maker using liblaries turtle graphic, colorgram and Tkinter</p>
-                                    <a href="https://github.com/LeoSuzu/Art_maker3_python" class="btn btn-outline-light" target="_blank">Repository</a>
+                                    <p class="project-description">
+                                        Generative art tool using Turtle graphics, Colorgram and Tkinter to create unique circle art.
+                                    </p>
+                                    <a href="https://github.com/LeoSuzu/Art_maker3_python"
+                                       class="btn btn-outline-light"
+                                       target="_blank"
+                                       rel="noopener noreferrer">
+                                        Repository
+                                    </a>
                                 </div>
                             </div>
 
                             <!-- Fifth Slide -->
                             <div class="carousel-item">
-                                <img class="carousel-element" src="./project_samples/AndroidApp/AndroiApps.png" alt="Android studio projects">
+                                <img class="carousel-element"
+                                     src="project_samples/AndroidApp/AndroiApps.png"
+                                     alt="Android Studio projects overview">
                                 <div class="carousel-caption">
                                     <h5 class="carousel-project-name">
-                                        Android studio projects (Java, Kotlin, Jetpack Compose)
+                                        Android Studio Projects (Java, Kotlin, Jetpack Compose)
                                     </h5>
-                                    <p class="project-description">Various Android native projects</p>
-                                    <a href="" class="btn btn-outline-light" target="_blank">Coming soon</a>
+                                    <p class="project-description">
+                                        Various native Android apps built while learning Java, Kotlin and Jetpack Compose.
+                                    </p>
+                                    <a href="#"
+                                       class="btn btn-outline-light"
+                                       target="_blank"
+                                       rel="noopener noreferrer">
+                                        Coming soon
+                                    </a>
                                 </div>
                             </div>
 
                             <!-- Sixth Slide -->
-
                             <div class="carousel-item">
-                                <img class="carousel-element" src="./project_samples/BitcoinAnalysisPre/BitcoinAnPred.png" alt="Bitcoin analysis and predict">
+                                <img class="carousel-element"
+                                     src="project_samples/BitcoinAnalysisPre/BitcoinAnPred.png"
+                                     alt="Bitcoin analysis and prediction charts">
                                 <div class="carousel-caption">
                                     <h5 class="carousel-project-name">
-                                        Bitcoin analysis and predict (Python, Machine Learning (LTSM, CNN))
+                                        Bitcoin Analysis and Prediction (Python, ML – LSTM, CNN)
                                     </h5>
-                                    <p class="project-description">Bitcoin analysis and predict with LTSM and CNN</p>
-                                    <a href="https://github.com/LeoSuzu/Bitcoin-analysis-and-predict" class="btn btn-outline-light" target="_blank">Repository</a>
+                                    <p class="project-description">
+                                        Time-series analysis and price prediction using LSTM and CNN models on Bitcoin data.
+                                    </p>
+                                    <a href="https://github.com/LeoSuzu/Bitcoin-analysis-and-predict"
+                                       class="btn btn-outline-light"
+                                       target="_blank"
+                                       rel="noopener noreferrer">
+                                        Repository
+                                    </a>
                                 </div>
                             </div>
 
                             <!-- Seventh Slide -->
-
                             <div class="carousel-item">
-                                <img class="carousel-element" src="./project_samples/ArduinoGame/ArduinoGame.png" alt="Arduino project">
+                                <img class="carousel-element"
+                                     src="project_samples/ArduinoGame/ArduinoGame.png"
+                                     alt="Arduino mini game console">
                                 <div class="carousel-caption">
                                     <h5 class="carousel-project-name">
-                                        Arduino small game console (C++, Arduino Nano, Sensors)
+                                        Arduino Mini Game Console (C++, Arduino Nano, Sensors)
                                     </h5>
-                                    <p class="project-description">Arduino small game console with team</p>
-                                    <a href="https://github.com/LeoSuzu/arduino_game_console" class="btn btn-outline-light" target="_blank">Repository</a>
+                                    <p class="project-description">
+                                        Small Arduino-based game console built with a team using sensors and custom game logic.
+                                    </p>
+                                    <a href="https://github.com/LeoSuzu/arduino_game_console"
+                                       class="btn btn-outline-light"
+                                       target="_blank"
+                                       rel="noopener noreferrer">
+                                        Repository
+                                    </a>
                                 </div>
                             </div>
 
                         </div>
 
                         <!-- Carousel Controls -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button"
+                                data-bs-target="#projectCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+
+                        <button class="carousel-control-next" type="button"
+                                data-bs-target="#projectCarousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active"></li>
-                            <li data-bs-target="#projectCarousel" data-bs-slide-to="1"></li>
-                            <li data-bs-target="#projectCarousel" data-bs-slide-to="2"></li>
-                            <li data-bs-target="#projectCarousel" data-bs-slide-to="3"></li>
-                            <li data-bs-target="#projectCarousel" data-bs-slide-to="4"></li>
-                            <li data-bs-target="#projectCarousel" data-bs-slide-to="5"></li>
-                            <li data-bs-target="#projectCarousel" data-bs-slide-to="6"></li>
-                        </ol>
+
                     </div>
                 </div>
             </section>
+
         </div>
         <!-- jQuery (Optional, but if using make sure it's not conflicting) -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
