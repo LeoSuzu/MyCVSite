@@ -11065,7 +11065,14 @@ section.cv-section .cv-section-content {
 .click_to_download{
   font-size: 10px;
   margin-top: -5px;
-}}
+}
+
+.carousel-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
 
 .btn-outline-light {
   border-radius: 15px;
