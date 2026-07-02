@@ -2811,6 +2811,7 @@ textarea.form-control-lg {
   --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
   display: inline-block;
   padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+  margin-bottom: 1rem;
   font-family: var(--bs-btn-font-family);
   font-size: var(--bs-btn-font-size);
   font-weight: var(--bs-btn-font-weight);
@@ -5834,26 +5835,16 @@ textarea.form-control-lg {
   transition: transform 0.6s ease-in-out;
 }
 
-.carousel-image {
-  max-width: 100%;
-  object-fit: cover;
-}
+
 
 .carousel-element {
+  display: block;
   max-width: 100%;
+  max-height: 70vh; /* cap tall (portrait) videos/images so they shrink to fit instead of stretching the carousel */
+  width: auto;
   height: auto;
-  object-fit: cover;
-}
-
-/* Project carousel: make the video smaller and centered */
-#projectCarousel .carousel-item video.carousel-element {
-    display: block;       /* allow margin centering */
-    max-width: 70%;       /* make it narrower than full width */
-    max-height: 60vh;     /* limit height: 60% of viewport */
-    width: auto;          /* keep aspect ratio */
-    height: auto;
-    margin: 0 auto;       /* center horizontally */
-    object-fit: contain;  /* show whole video, no cropping */
+  margin: 0 auto; /* center horizontally once max-height kicks in and the element is narrower than the carousel */
+  object-fit: contain;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -5990,17 +5981,17 @@ textarea.form-control-lg {
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;
-  width: 8%; /* Make indicators smaller */
-  height: 1.2vh; /* Adjust height */
-  border-radius: 90%; /* Make indicators rounded */
-  margin: 0 0.5%; /* Add space between indicators */
+  width: 1vh; /* Make indicators smaller */
+  height: 1vh; /* Adjust height */
+  border-radius: 100%; /* Make indicators rounded */
+  margin: 0 2%; /* Add space between indicators */
   cursor: pointer;
   background-color: #fff;
   background-clip: padding-box;
   border: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  opacity: 0.5;
+  opacity: 0.3;
   transition: opacity 0.6s ease;
 }
 
@@ -6044,7 +6035,9 @@ textarea.form-control-lg {
   }
 
   .carousel-inner .carousel-item video {
-    width: 100%;
+    max-width: 100%;
+    max-height: 60vh;
+    width: auto;
     height: auto;
   }
 
