@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@vercel/analytics": "^2.0.1",
     "cors": "^2.8.5"
   },
   "name": "mycvsite",
