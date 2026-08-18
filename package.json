@@ -4,6 +4,9 @@
     "cors": "^2.8.5"
   },
   "name": "mycvsite",
+  "engines": {
+    "node": "24.x"
+  },
   "description": "This is my personal page made with bootstrap template under licence of MIT. I have made my own copy from this template and made own changes. Under this section you can find licence and persmissions for use this bootstarp template.",
   "version": "1.0.0",
   "main": "index.js",
