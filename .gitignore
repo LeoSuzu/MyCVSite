@@ -24,6 +24,7 @@ build/
 # Temporary files
 *.tmp
 *.swp
+.worktrees/
 
 # Generated files by npm/yarn
 package-lock.json
