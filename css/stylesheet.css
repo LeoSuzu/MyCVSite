@@ -11031,6 +11031,7 @@ section.cv-section .cv-section-content {
   max-width: 50px; /* Limit max size on big screens */
   min-width: 10px; /* Limit min size on small screens */
   margin: 0 0 0.3rem 0.5rem; /* Space between icons order top, right, bottom, left */
+}
 
 @media (max-width: 768px) {
   .logos {
@@ -11072,4 +11073,22 @@ section.cv-section .cv-section-content {
   padding: 1px 30px;
   margin-top: -5px;
   margin-bottom: 15px;
+}
+
+/* Legacy site notice banner, links to the current portfolio site. */
+.legacy-banner {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  background-color: #16181a;
+  color: #f5efe6;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.01rem;
+  text-decoration: none;
+}
+.legacy-banner:hover,
+.legacy-banner:focus {
+  background-color: #d48a6e;
+  color: #16181a;
 }
