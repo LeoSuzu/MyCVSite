@@ -29,3 +29,4 @@ build/
 # Generated files by npm/yarn
 package-lock.json
 yarn.lock
+test-results/
